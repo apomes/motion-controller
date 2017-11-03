@@ -11,7 +11,8 @@ import CoreMotion
 
 
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, WebSocketControllerDelegate {
+
 
     @IBOutlet weak var rollValue: UILabel!
     
@@ -22,12 +23,17 @@ class ViewController: UIViewController {
     var motion: CMMotionManager = CMMotionManager()
     var queue: OperationQueue = OperationQueue()
     
+    var webSocketController: WebSocketController = WebSocketController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         // Start receiving motion updates from sensors
         startQueuedUpdates()
+        
+        // Start websocket
+        webSocketController.delegate = self
         
     }
 
@@ -65,6 +71,13 @@ class ViewController: UIViewController {
                     }
             })
         }
+    }
+    
+    
+    
+    // MARK: - WebSocket Controller Delegate Methods
+    func webSocketControllerDidConnect(_ webSocketController: WebSocketController) {
+        print("Web socket controller says the socket is connected")
     }
 
 }

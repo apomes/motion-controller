@@ -13,6 +13,15 @@ import Starscream
 
 class WebSocketController: WebSocketDelegate {
     
+    var delegate: WebSocketControllerDelegate?
+    
+    var socket = WebSocket(url: URL(string: "ws://localhost:8080/")!, protocols: ["chat", "superchat"])
+    
+    init() {
+        socket.delegate = self
+        socket.connect()
+    }
+    
     // MARK: - WebSocket Delegate Methods
     func websocketDidConnect(socket: WebSocketClient) {
         print("websocket is connected")
@@ -34,4 +43,8 @@ class WebSocketController: WebSocketDelegate {
         print("Received data: \(data.count)")
     }
     
+}
+
+protocol WebSocketControllerDelegate {
+    func webSocketControllerDidConnect(_ webSocketController: WebSocketController)
 }
