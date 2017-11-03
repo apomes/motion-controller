@@ -17,7 +17,7 @@
 		EA68CCCA1F8FD73000EEA23C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA68CCC81F8FD73000EEA23C /* LaunchScreen.storyboard */; };
 		EA68CCD51F8FD73000EEA23C /* MotionControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA68CCD41F8FD73000EEA23C /* MotionControllerTests.swift */; };
 		EA68CCE01F8FD73000EEA23C /* MotionControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA68CCDF1F8FD73000EEA23C /* MotionControllerUITests.swift */; };
-		EA68CCF01F8FE73C00EEA23C /* WebSocketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA68CCEF1F8FE73C00EEA23C /* WebSocketViewController.swift */; };
+		EA78708F1FACC9C600EE1B2B /* WebSocketController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA78708E1FACC9C600EE1B2B /* WebSocketController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +59,7 @@
 		EA68CCDB1F8FD73000EEA23C /* MotionControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MotionControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA68CCDF1F8FD73000EEA23C /* MotionControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionControllerUITests.swift; sourceTree = "<group>"; };
 		EA68CCE11F8FD73000EEA23C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EA68CCEF1F8FE73C00EEA23C /* WebSocketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketViewController.swift; sourceTree = "<group>"; };
+		EA78708E1FACC9C600EE1B2B /* WebSocketController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketController.swift; sourceTree = "<group>"; };
 		ED1BC6C9254C4F7709211AD4 /* Pods-MotionControllerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MotionControllerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MotionControllerTests/Pods-MotionControllerTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,7 +141,7 @@
 			children = (
 				EA68CCBF1F8FD73000EEA23C /* AppDelegate.swift */,
 				EA68CCC11F8FD73000EEA23C /* ViewController.swift */,
-				EA68CCEF1F8FE73C00EEA23C /* WebSocketViewController.swift */,
+				EA78708E1FACC9C600EE1B2B /* WebSocketController.swift */,
 				EA68CCC31F8FD73000EEA23C /* Main.storyboard */,
 				EA68CCC61F8FD73000EEA23C /* Assets.xcassets */,
 				EA68CCC81F8FD73000EEA23C /* LaunchScreen.storyboard */,
@@ -463,7 +463,7 @@
 			files = (
 				EA68CCC21F8FD73000EEA23C /* ViewController.swift in Sources */,
 				EA68CCC01F8FD73000EEA23C /* AppDelegate.swift in Sources */,
-				EA68CCF01F8FE73C00EEA23C /* WebSocketViewController.swift in Sources */,
+				EA78708F1FACC9C600EE1B2B /* WebSocketController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
